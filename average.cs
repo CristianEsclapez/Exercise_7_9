@@ -6,7 +6,7 @@ public class Average
 {
 	public static void Main()
 	{
-		double firstNote = 0, secondNote, counter = 0, average;
+		double a = 0, b, counter = 0, average;
 		string mark;
 		
 		Console.Write("Insert a mark: ");
@@ -14,9 +14,9 @@ public class Average
 			 
 		while(mark != "end")
 		{
-			secondNote = Convert.ToDouble(s);
+			b = Convert.ToDouble(mark);
 			counter++;
-			firstNote += secondNote;
+			a += b;
 			
 			Console.Write("Insert a mark: ");
 			mark = Console.ReadLine();
@@ -24,7 +24,7 @@ public class Average
 		
 		if(counter != 0)
 		{
-			average = firstNote / counter;
+			average = a / counter;
 			Console.WriteLine("The average is {0}.", average);
 		}
 	}
