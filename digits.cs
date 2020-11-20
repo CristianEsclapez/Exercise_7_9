@@ -1,3 +1,4 @@
+//The program ends when the user types the user types “end”.
 using System;
 
 class digits
@@ -5,7 +6,7 @@ class digits
 	
 	static void Main()
 	{
-		int oneDigit = 0, twoDigits = 0, threeDigits = 0, nDigits = 0;
+		int n = 0, n2 = 0, n3 = 0, nx = 0;
 		Console.WriteLine("Insert a number: ");
 		
 		string close = Console.ReadLine();
@@ -16,19 +17,19 @@ class digits
 			
 			if(input != 0)
 			{
-				if(input/10 == 0)
-					oneDigit++;
+				if (input/10 == 0)
+					n++;
 				else if (input/100 == 0)
-					twoDigits++;
+					n2++;
 				else if (input/1000 == 0)
-					threeDigits ++;
+					n3++;
 				else
-					nDigits ++; 
+					nx++; 
 			}
 			close = Console.ReadLine();
 		}
 		Console.WriteLine("one: {0} two: {1} three: {2} more: {3}", 
-		oneDigit, twoDigits, threeDigits, nDigits); 
+		n, n2, n3, nx); 
 
 
 	}
